@@ -12,6 +12,7 @@ if(dash){
 if(melee){
     image_index = 0;
     state = scr_melee_state;
+    alarm[0] = room_speed/6;
 }
 
 //axis

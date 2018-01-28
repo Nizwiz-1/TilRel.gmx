@@ -59,7 +59,7 @@ if(Distance &lt;= ViewDistance){
     angle = arctan2(phy_position_x - obj_player.phy_position_x, phy_position_y - obj_player.phy_position_y);    
 
     phy_position_x += sin(-angle);
-    phy_position_y += cos(angle);
+    phy_position_y -= cos(-angle);
 }
 
 depth = -y;

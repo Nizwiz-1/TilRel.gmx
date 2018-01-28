@@ -29,6 +29,7 @@
     <object>objects\obj_dash</object>
     <object>objects\obj_enemy</object>
     <object>objects\obj_boss</object>
+    <object>objects\obj_wall_node</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_1</room>

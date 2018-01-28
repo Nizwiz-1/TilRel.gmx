@@ -51,8 +51,16 @@ spd = 1;
           <argument>
             <kind>1</kind>
             <string>///Step
-phy_position_x += sign(obj_player.x - x)*spd; 
-phy_position_y += sign(obj_player.y -y)*spd;
+ViewDistance = 9 * 16;
+Distance = sqrt(power(abs(phy_position_x - obj_player.phy_position_x), 2) 
++ power(abs(phy_position_y - obj_player.phy_position_y), 2));
+if(Distance &lt;= ViewDistance){
+
+    angle = arctan2(phy_position_x - obj_player.phy_position_x, phy_position_y - obj_player.phy_position_y);    
+
+    phy_position_x += sin(-angle) * spd;
+    phy_position_y -= cos(-angle) * spd;
+}
 
 depth = -y;
 </string>
@@ -101,6 +109,9 @@ depth = -y;
           <argument>
             <kind>1</kind>
             <string>///Collide
+
+global.Obstacle = true;
+global.angles = array_create(obj_wall_node.instance_count - 1);
 </string>
           </argument>
         </arguments>

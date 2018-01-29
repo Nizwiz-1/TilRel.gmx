@@ -25,8 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>number = global.count + 1
-global.count += 1;
+            <string>//number = global.count + 1
+//global.count += 1;
 </string>
           </argument>
         </arguments>
@@ -51,9 +51,9 @@ global.count += 1;
             <kind>1</kind>
             <string>///compare angles
 
-if(global.obstacle){
-    global.angles[number] = 
-}
+//if(global.obstacle){
+//    global.angles[number] = 
+//}
 </string>
           </argument>
         </arguments>

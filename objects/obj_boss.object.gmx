@@ -110,8 +110,8 @@ depth = -y;
             <kind>1</kind>
             <string>///Collide
 
-global.Obstacle = true;
-global.angles = array_create(obj_wall_node.instance_count - 1);
+//global.Obstacle = true;
+//global.angles = array_create(obj_wall_node.instance_count - 1);
 </string>
           </argument>
         </arguments>
